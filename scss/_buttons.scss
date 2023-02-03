@@ -1,0 +1,36 @@
+.btn {
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+
+  &.yellow {
+    background-color: $yellow;
+    color: $primary;
+    padding: 11px 50px;
+    border: 1px solid transparent;
+
+    @include devices(mobile) {
+      padding: 10px 14px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+  &.outline {
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $white;
+    padding: 15px 40px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $yellow;
+      border: 1px solid $yellow;
+      color: $primary;
+    }
+  }
+}
